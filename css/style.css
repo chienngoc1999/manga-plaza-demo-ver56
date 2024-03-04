@@ -1,9 +1,16 @@
+@import url("/css/fontFace.css");
+
 body {
   margin: 0 auto;
   font-family: Roboto;
   font-weight: 400;
   min-width: 375px;
   max-width: 990px;
+}
+.img-8,
+.img-14,
+.img-20 {
+  padding-bottom: 5rem;
 }
 
 .layout-content {
@@ -12,62 +19,127 @@ body {
 }
 
 .image-content {
-  display: block;
   width: 100%;
+  display: block;
+  margin-bottom: 10px;
 }
 
+.logo {
+  margin-top: 20px;
+  margin-bottom: 200px;
+}
+
+.image-top {
+  display: block;
+  margin: auto;
+}
+
+.image1 {
+  margin-top: -15px;
+}
+
+.image-cover {
+  width: 75%;
+  margin: 0 auto;
+}
+.full-image {
+  text-align: center;
+  display: grid;
+}
 .content-absolute {
-  position: absolute;
   width: 100%;
-  margin-top: -29px;
+  padding: 10px 0 12px 0;
 }
 
 .text-content {
   text-align: center;
   float: right;
-  width: 170px;
+  padding-left: 5px;
+  padding-right: 5px;
   height: 18px;
-  background-color: #fff;
+  background-color: transparent;
   border-radius: 5px;
   margin-right: 6px;
   font-weight: 300;
-  color: #231F20;
+  color: #000;
   font-size: 10.5px;
-  font-family: Roboto;
+  font-family: system-ui;
+}
+.end-line {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.name-tag {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: end;
+  font-size: 12px;
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+.sub-name-tag {
+  margin-right: 6px;
+}
+
+.image-btn {
+  width: 100%;
+  border-radius: 9999px;
+  border-color: #faa904;
+  font-size: 67px;
+  font-weight: 900;
+  color: #fff;
+  background-color: #faa904;
+  font-family: "Supra";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.taga {
+  text-decoration: none;
+}
+
+.text-button {
+  filter: drop-shadow(0.03em 0.03em 0.07em rgba(0, 0, 2, 5));
 }
 
 .text-absolute {
   margin: 0 auto;
-  margin-top: 2px;
-  font-family: Roboto;
+  margin-top: 1px;
+  font-family: system-ui;
+}
+
+.child-layout-footer {
+  background-color: #000;
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 35px;
 }
 
 .layout-cta {
-  background-image: url(../img/background.png);
   padding-bottom: 19vw;
   background-size: cover;
 }
 
 .text-content-cta {
-  font-style: italic;
+  font-style: normal;
   font-weight: 700;
-  font-family: Roboto;
+  font-family: system-ui;
   text-shadow: -0.2vw 0 #fff, 0 0.4vw #fff, 0.4vw 0 #fff, 0 -0.2vw #fff;
 }
 
 .layout {
-  font-family: Roboto;
+  font-family: system-ui;
   font-style: italic;
   text-align: center;
   font-size: 6.95vw;
   color: #ff0080;
   margin: 0 auto;
-
 }
 
 .content-cta {
   padding-top: 13.6vw;
-
 }
 
 .textButton {
@@ -81,8 +153,8 @@ body {
 }
 
 .text-italic-bold {
-  color: #ffa903;
-  font-style: italic;
+  color: #ffa904;
+  font-style: nomal;
   font-weight: 700;
   font-family: Roboto;
 }
@@ -96,20 +168,31 @@ body {
 .layoutFooter {
   font-style: italic;
   font-weight: 400;
-  background-color: #242424;
+  background-color: #000;
   text-align: center;
   font-size: 4.5334vw;
   color: #ffffff;
-  background-image: url(../img/backgroundFooter.png);
   background-size: cover;
   font-family: Roboto;
   max-width: 990px;
+  font-size: 45px !important;
+  max-width: 990px !important;
+  padding-bottom: 350px;
 }
 
 .text-content-footer {
   font-family: Roboto;
   font-weight: 700;
   font-style: normal;
+}
+
+.text-content-sub-footer {
+  font-family: Roboto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 35px;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
 }
 
 .text-bold-footer {
@@ -121,25 +204,26 @@ body {
   font-style: italic;
   font-weight: 500;
   font-family: Roboto;
-  margin-bottom: 11.47vw
+  margin-bottom: 11.47vw;
 }
 
 .btn {
   position: relative;
   cursor: pointer;
   display: block;
-  margin: 40px auto 0;
+  margin: 10px auto 0;
   color: #fff;
   font-size: 1.5em;
   transition: 0.3s;
   height: 12.8vw;
   border-radius: 15px;
-  width: 67.4vw;
+  width: 49.4vw;
 }
 
 .btn-root {
-  margin-bottom: 14.8vw;
-  margin-top: 11.737vw
+  margin-bottom: 1.8vw;
+  margin-top: 3.263vw;
+  height: 12vh;
 }
 
 .btn-root:hover .btn {
@@ -154,21 +238,10 @@ body {
   z-index: 100;
 }
 
-.btnBack {
-  transition: all 0.3s;
-  background-color: #eac4d7;
-  height: 12.8vw;
-  width: 100%;
-  position: absolute;
-  z-index: 5;
-  margin-left: 5px;
-  border-radius: 2.55vw;
-  margin-top: 5px
-}
-
 .btn-top {
   z-index: 10;
   position: absolute;
+  width: 100%;
 }
 
 .btn-root:hover .btnBack {
@@ -178,7 +251,7 @@ body {
 
 .content-info {
   text-align: center;
-  margin-top: 10vw
+  margin-top: 10vw;
 }
 
 .image-content-info {
@@ -186,15 +259,14 @@ body {
 }
 
 .image-logo {
-  padding-top: 10.14vw;
-  margin-bottom: 4.55vw;
-  width: 45.34vw;
+  margin-top: 5px;
+  width: 17.34vw;
 }
 
-.btn-root-footer {
+/* .btn-root-footer {
   margin-bottom: 13.34vw;
-  margin-top: 18.135vw;
-}
+  margin-top: 9.135vw;
+} */
 
 .swiper-container {
   height: 30.54vw;
@@ -240,47 +312,45 @@ body {
   margin-right: 1.6vw;
 }
 
-@media (min-width:991px) {
+@media (min-width: 991px) {
+  .box-razzmatazz {
+    margin-top: -15px;
+  }
+
+  .text-absolute {
+    margin: 0 auto;
+    margin-top: 2.5px;
+    font-family: Roboto;
+  }
+
   .layout {
     font-size: 69px;
+  }
+
+  .image-content {
+    margin-bottom: 15px !important;
   }
 
   .content-absolute {
     max-width: 990px;
     margin: 0 auto;
-    margin-top: -29px;
-  }
-
-  .text-content-cta {
-    text-shadow: -2px 0 #fff, 0 4px #fff, 4px 0 #fff, 0 -2px #fff;
-  }
-
-  .layout-cta {
-    padding-bottom: 188px !important;
-  }
-
-  .content-cta {
-    padding-top: 135px !important;
+    margin-top: -27px;
+    margin-bottom: 3px;
   }
 
   .image-btn {
-    width: 668px;
-    height: 138px !important;
-  }
-
-  .btn-root {
-    margin-top: 179.5px;
-    margin-bottom: 132.5px;
+    width: 565px;
+    height: 128px !important;
   }
 
   .btnBack {
-    width: 668px !important;
+    width: 565px !important;
     height: 138px !important;
     border-radius: 30px !important;
   }
 
   .btn {
-    width: 668px !important;
+    width: 565px !important;
     height: 138px !important;
   }
 
@@ -296,15 +366,9 @@ body {
     height: 322.5px !important;
   }
 
-  .layoutFooter {
-    font-size: 45px !important;
-    max-width: 990px !important;
-  }
-
   .image-logo {
-    padding-top: 100.5px !important;
-    margin-bottom: 45px;
-    width: 449px !important;
+    margin-top: 5px;
+    width: 210px !important;
   }
 
   .text-footer {
@@ -349,5 +413,69 @@ body {
   .swiper-container-rtl .swiper-button-prev {
     right: 39.6px;
   }
+}
 
+@media only screen and (max-width: 989px) {
+  .content-absolute {
+    width: 100%;
+    margin-top: -11.5px;
+    position: absolute !important;
+  }
+  .text-button {
+    font-size: 43px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .layoutFooter {
+    padding-bottom: 300px;
+  }
+  .text-button {
+    font-size: 43px;
+  }
+  .logo {
+    margin-top: 0;
+    margin-bottom: 100px;
+  }
+}
+
+
+@media only screen and (max-width: 618px) {
+  .content-absolute {
+    width: 100%;
+    margin-top: -11.5px;
+    position: absolute !important;
+  }
+  .layoutFooter {
+    padding-bottom: 150px;
+  }
+
+  .text-content-footer {
+    font-size: 24px;
+  }
+  .text-content-sub-footer {
+    font-size: 18px;
+  }
+  .text-button {
+    font-size: 23px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .image-top {
+    width: 76%;
+  }
+  .text-button {
+    font-size: 20px;
+  }
+  .logo {
+    margin-top: 0;
+    margin-bottom: 100px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .text-button {
+    font-size: 17px;
+  }
 }
