@@ -86,7 +86,10 @@ body {
 .sub-name-tag {
   margin-right: 6px;
   margin-left: 6px;
-  margin-bottom: 10px
+}
+
+.last-img {
+  margin-bottom: 0px !important;
 }
 
 .image-btn {
@@ -336,7 +339,7 @@ body {
   }
 
   .image-content {
-    margin-bottom: 15px !important;
+    margin-bottom: 15px;
   }
 
   .content-absolute {
