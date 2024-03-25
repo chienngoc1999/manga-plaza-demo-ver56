@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Supra";
-  src: url('./font/Supra\ W03\ BoldRounded.ttf') format('woff');
+  src: url("./font/Supra\ W03\ BoldRounded.ttf") format("woff");
   font-weight: bold;
   font-style: normal;
 }
@@ -10,12 +10,15 @@ body {
   font-family: Roboto;
   font-weight: 400;
   min-width: 375px;
-  max-width: 990px;
 }
 .img-8,
 .img-14,
 .img-20 {
   padding-bottom: 5rem;
+}
+
+.image-last {
+  margin-bottom: 0px !important;
 }
 
 .layout-content {
@@ -80,12 +83,11 @@ body {
   align-items: center;
   justify-content: end;
   font-size: 12px;
-  margin-bottom: 2px;
-  margin-top: 2px;
+  max-width: 990px;
+  margin: 0 auto;
 }
 .sub-name-tag {
-  margin-right: 6px;
-  margin-left: 6px;
+  margin: 3px 6px 3px 6px;
 }
 
 .last-img {
@@ -187,8 +189,8 @@ body {
   font-family: Roboto;
   max-width: 990px;
   font-size: 45px !important;
-  max-width: 990px !important;
   padding-bottom: 350px;
+  margin: 0 auto;
 }
 
 .text-content-footer {
@@ -272,43 +274,6 @@ body {
 .image-logo {
   margin-top: 5px;
   width: 17.34vw;
-}
-
-/* .btn-root-footer {
-  margin-bottom: 13.34vw;
-  margin-top: 9.135vw;
-} */
-
-.swiper-container {
-  height: 30.54vw;
-  padding-bottom: 6.65vw;
-  margin: 0 auto;
-}
-
-.swiper-button-next:after {
-  font-size: 6.2vw;
-  font-style: normal;
-  color: #ff0080;
-  margin-top: -4vw;
-  font-weight: 700;
-}
-
-.swiper-button-prev:after {
-  font-size: 6.2vw;
-  font-style: normal;
-  color: #ff0080;
-  margin-top: -4vw;
-  font-weight: 700;
-}
-
-.swiper-button-prev,
-.swiper-container-rtl .swiper-button-next {
-  left: 2.7vw;
-}
-
-.swiper-button-next,
-.swiper-container-rtl .swiper-button-prev {
-  right: 2.7vw;
 }
 
 .image-slide {
@@ -398,32 +363,6 @@ body {
     margin-left: 16px;
     margin-right: 16px;
   }
-
-  .swiper-container {
-    height: 303px;
-    padding-bottom: 66px;
-    margin: 0 auto;
-  }
-
-  .swiper-button-next:after {
-    font-size: 61.38px;
-    margin-top: -22px;
-  }
-
-  .swiper-button-prev:after {
-    font-size: 61.38px;
-    margin-top: -22px;
-  }
-
-  .swiper-button-prev,
-  .swiper-container-rtl .swiper-button-next {
-    left: 39.6px;
-  }
-
-  .swiper-button-next,
-  .swiper-container-rtl .swiper-button-prev {
-    right: 39.6px;
-  }
 }
 
 @media only screen and (max-width: 989px) {
@@ -449,7 +388,6 @@ body {
     margin-bottom: 100px;
   }
 }
-
 
 @media only screen and (max-width: 618px) {
   .content-absolute {
