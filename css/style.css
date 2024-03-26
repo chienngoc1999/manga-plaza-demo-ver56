@@ -1,24 +1,22 @@
-@font-face {
-  font-family: "Supra";
-  src: url("./font/Supra\ W03\ BoldRounded.ttf") format("woff");
-  font-weight: bold;
-  font-style: normal;
-}
-
 body {
   margin: 0 auto;
   font-family: Roboto;
   font-weight: 400;
   min-width: 375px;
 }
-.img-8,
-.img-14,
-.img-20 {
-  padding-bottom: 5rem;
-}
 
 .image-last {
   margin-bottom: 0px !important;
+}
+
+.box-razzmataz {
+  margin-bottom: 0 !important;
+}
+.img-1 {
+  margin-bottom: 0 !important;
+}
+.img-2 {
+  margin-top: 0 !important;
 }
 
 .layout-content {
@@ -35,11 +33,6 @@ body {
 .logo {
   margin-top: 20px;
   margin-bottom: 200px;
-}
-
-.image-top {
-  display: block;
-  margin: auto;
 }
 
 .image1 {
@@ -289,10 +282,6 @@ body {
 }
 
 @media (min-width: 991px) {
-  .box-razzmatazz {
-    margin-top: -15px;
-  }
-
   .text-absolute {
     margin: 0 auto;
     margin-top: 2.5px;
@@ -365,6 +354,10 @@ body {
   }
 }
 
+@media (max-width: 991px) {
+
+}
+
 @media only screen and (max-width: 989px) {
   .content-absolute {
     width: 100%;
@@ -414,9 +407,6 @@ body {
 }
 
 @media only screen and (max-width: 375px) {
-  .image-top {
-    width: 76%;
-  }
   .text-button {
     font-size: 20px;
   }
@@ -432,5 +422,10 @@ body {
 @media only screen and (max-width: 320px) {
   .text-button {
     font-size: 17px;
+  }
+}
+@media only screen and (max-width: 406px) {
+  .name-tag {
+    font-size: 9px;
   }
 }
